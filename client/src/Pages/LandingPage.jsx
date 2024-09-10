@@ -163,7 +163,7 @@ const LandingPage = () => {
             />
             <h1 style={{ fontSize: '48px', fontWeight: 800, color: 'black', textAlign: 'center' }}>PROJECTS</h1>
           </div>
-          <div style={{ backgroundImage: note, backgroundSize: 'cover',
+          <div style={{ backgroundImage: 'url(note)', backgroundSize: 'cover',
              backgroundPosition: 'center', borderRadius: '24px', padding: '40px'}}>
             <h2 style={{ fontSize: '40px', fontWeight: 700, textAlign: 'center', marginBottom: '20px' }}>Overview</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
