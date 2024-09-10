@@ -1,11 +1,12 @@
 import React from 'react';
 import '../index.css';
+import maizegazeLogo from "/src/assets/logo.png";
 
 const MaizeGaze = () => {
   return (
     <div className="max-w-5xl mx-auto p-6 mt-20">
         <header className="mb-8">
-            <img src="/src/assets/logo.png" alt="MaizeGaze Logo" className="w-16 h-16 mb-4" />
+            <img src={maizegazeLogo} alt="MaizeGaze Logo" className="w-16 h-16 mb-4" />
             <h1 className="text-4xl font-bold">Project: MaizeGaze</h1>
         </header>
 
