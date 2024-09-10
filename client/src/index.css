@@ -53,3 +53,22 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.page-description {
+  margin-bottom: 2em;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
