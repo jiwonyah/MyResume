@@ -1,6 +1,8 @@
 import React from 'react';
 import '../index.css';
 import maizegazeLogo from "/src/assets/logo.png";
+import screenshot1 from "/src/assets/image.png";
+import video from "/src/assets/tutorial.mp4";
 
 const MaizeGaze = () => {
   return (
@@ -81,7 +83,7 @@ const MaizeGaze = () => {
                         </div>
                         <div className="md:w-1/2">
                             <video className="w-full rounded-lg shadow-lg" controls>
-                            <source src="/src/assets/tutorial.mp4" type="video/mp4" />
+                            <source src={video} type="video/mp4" />
                             Your browser does not support the video tag.
                             </video>
                         </div>
@@ -96,7 +98,7 @@ const MaizeGaze = () => {
                         </h4>
                         <p className="ml-8">사용자가 사용 중인 저장 공간을 표시하고, <code>flowbite</code>의 <code>Progress</code> 바를 통해 시각적으로 저장소 사용량을 나타냅니다.</p>
                     </div>
-                    <img src="/src/assets/image.png" alt="screenshot 1"/>
+                    <img src={screenshot1} alt="screenshot 1"/>
                 </div>
                 <div className="mb-4">
                     <h4 className="text-lg font-semibold">
