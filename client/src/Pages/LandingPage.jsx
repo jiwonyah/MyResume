@@ -1,6 +1,34 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TbArrowBigUpLines } from "react-icons/tb";
+import sprout from "/src/assets/sprout6_27.png";
+import clip from "/src/assets/Rectangle 513_225.png";
+import person from "/src/assets/User13_230.png";
+import email from "/src/assets/Message13_235.png";
+import phone from "/src/assets/Phone13_240.png";
+import graduate from "/src/assets/Mortarboard13_246.png";
+import github from "/src/assets/github18_123.png";
+import velog from "/src/assets/velog18_140.png";
+import html from "/src/assets/html_css_js29_134.png";
+import react from "/src/assets/react29_132.png";
+import vite from "/src/assets/vite29_131.png";
+import tailewind from "/src/assets/tailwind29_133.png";
+import python from "/src/assets/python29_142.png";
+import flask from "/src/assets/flask29_140.png";
+import mysql from "/src/assets/mysql29_139.png";
+import sqlite from "/src/assets/sqlite29_145.png";
+import git from "/src/assets/git31_115.png";
+import githubIcon from "/src/assets/github31_119.png";
+import jira from "/src/assets/jira33_132.png";
+import figma from "/src/assets/figma33_133.png";
+import taiga from "/src/assets/taiga31_122.png";
+import netlify from "/src/assets/netlify31_128.png";
+import docker from "/src/assets/docker33_136.png";
+import pin from "/src/assets/pin39_371.png";
+import note from "/src/assets/note37_277.png";
+import checkmark from "/src/assets/Done_round_fill39_361.png";
+
+
 
 const LandingPage = () => {
   return (
@@ -14,9 +42,7 @@ const LandingPage = () => {
           <h2 style={{ fontSize: '43px', fontWeight: 700, color: 'black', marginBottom: '8px' }}>Junior Developer</h2>
           <p style={{ fontSize: '36px', color: 'black' }}>Full-Stack</p>
         </div>
-        <img style={{ position: 'absolute', right: '96px', bottom: '0' }} width="146" height="136" src="/src/assets/sprout6_27.png" alt="Sprout" />
-        {/* <img style={{ position: 'absolute', left: '36px', top: '36px' }} width="45" src="/src/assets/menu7_71.png" alt="Menu" /> */}
-        {/* <img style={{ position: 'absolute', right: '36px', top: '28px' }} width="45" src="/src/assets/Download7_56.png" alt="Download" /> */}
+        <img style={{ position: 'absolute', right: '96px', bottom: '0' }} width="146" height="136" src={sprout} alt="Sprout" />
       </header>
 
       {/* About Me Section */}
@@ -25,14 +51,14 @@ const LandingPage = () => {
           
           {/* About Me Section - Increased Width */}
           <div style={{ position: 'relative', backgroundColor: 'white', borderRadius: '24px', padding: '20px', width: '600px' }}>
-            <img style={{ position: 'absolute', top: '-64px', left: '80px' }} width="103" height="122" src="/src/assets/Rectangle 513_225.png" alt="Profile" />
+            <img style={{ position: 'absolute', top: '-64px', left: '80px' }} width="103" height="122" src={clip} alt="Profile" />
             <h2 style={{ fontSize: '36px', fontWeight: 900, marginBottom: '20px', textAlign: 'center', marginTop: '20px' }}>ABOUT ME</h2>
             <div style={{ marginTop: '20px', marginLeft: '28px', marginRight: '28px', marginBottom: '20px' }}>
               {[
-                { icon: "/src/assets/User13_230.png", text: "Jiwon Moon" },
-                { icon: "/src/assets/Message13_235.png", text: "jiwoncode0502@gmail.com" },
-                { icon: "/src/assets/Phone13_240.png", text: "+65) 8280 - 2720" },
-                { icon: "/src/assets/Mortarboard13_246.png", text: "University of Wollongong (Bachelor of Computer Science)" },
+                { icon: person, text: "Jiwon Moon" },
+                { icon: email, text: "jiwoncode0502@gmail.com" },
+                { icon: phone, text: "+65) 8280 - 2720" },
+                { icon: graduate, text: "University of Wollongong (Bachelor of Computer Science)" },
               ].map((item, index) => (
                 <div key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
                   <img width="45" src={item.icon} alt={`Icon ${index + 1}`} style={{ marginRight: '16px' }} />
@@ -69,7 +95,7 @@ const LandingPage = () => {
                   "Undergraduate assignments",
                   "Self-taught coding"
                 ],
-                image: "/src/assets/github18_123.png",
+                image: github,
               },
               {
                 title: "What are in here?",
@@ -80,7 +106,7 @@ const LandingPage = () => {
                   "Sharing information with others",
                   "Summarizing undergraduate assignments"
                 ],
-                image: "/src/assets/velog18_140.png",
+                image: velog,
               },
             ].map((item, index) => (
               <div key={index} style={{ backgroundColor: 'white', borderRadius: '24px', padding: '32px', width: '600px' }}>
@@ -104,12 +130,12 @@ const LandingPage = () => {
           <h1 style={{ fontSize: '48px', fontWeight: 800, color: 'black', marginBottom: '40px', textAlign: 'center' }}>SKILLS</h1>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '32px' }}>
             {[
-              { title: "Front-end", images: ["/src/assets/html_css_js29_134.png", "/src/assets/react29_132.png", "/src/assets/vite29_131.png", "/src/assets/tailwind29_133.png"] },
-              { title: "Back-end", images: ["/src/assets/python29_142.png", "/src/assets/flask29_140.png", "/src/assets/mysql29_139.png", "/src/assets/sqlite29_145.png"] },
-              { title: "Version Control", images: ["/src/assets/git31_115.png", "/src/assets/github31_119.png"] },
-              { title: "Communication", images: ["/src/assets/jira33_132.png", "/src/assets/figma33_133.png", "/src/assets/taiga31_122.png"] },
-              { title: "Deployment", images: ["/src/assets/netlify31_128.png"] },
-              { title: "Container", images: ["/src/assets/docker33_136.png"] },
+              { title: "Front-end", images: [html, react, vite, tailewind] },
+              { title: "Back-end", images: [python, flask, mysql, sqlite] },
+              { title: "Version Control", images: [git, githubIcon] },
+              { title: "Communication", images: [jira, figma, taiga] },
+              { title: "Deployment", images: [netlify] },
+              { title: "Container", images: [docker] },
             ].map((skill, index) => (
               <div key={index} style={{ backgroundColor: 'white', borderRadius: '24px', padding: '32px' }}>
                 <h3 style={{ fontSize: '30px', fontWeight: 800, color: '#e86800', textAlign: 'center', marginBottom: '16px' }}>{skill.title}</h3>
@@ -132,17 +158,12 @@ const LandingPage = () => {
             <img
               style={{ position: 'absolute', left: '250px', marginTop:'83px', transform: 'translateY(-50%)' }}
               width="80"
-              src="/src/assets/pin39_371.png"
+              src={pin}
               alt="Pin"
             />
-            {/* <img
-              width="1000"
-              src="/src/assets/Projects33_275.png"
-              alt="Projects"
-            /> */}
             <h1 style={{ fontSize: '48px', fontWeight: 800, color: 'black', textAlign: 'center' }}>PROJECTS</h1>
           </div>
-          <div style={{ backgroundImage: 'url("/src/assets/note37_277.png")', backgroundSize: 'cover',
+          <div style={{ backgroundImage: note, backgroundSize: 'cover',
              backgroundPosition: 'center', borderRadius: '24px', padding: '40px'}}>
             <h2 style={{ fontSize: '40px', fontWeight: 700, textAlign: 'center', marginBottom: '20px' }}>Overview</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
@@ -152,7 +173,7 @@ const LandingPage = () => {
                 // { title: "LinkMingle", description: "App for simply sharing Biz Card" },
               ].map((project, index) => (
                 <div key={index} style={{ display: 'flex', alignItems: 'flex-start' }}>
-                  <img width="53" height="53" src={`/src/assets/Done_round_fill39_361.png`} alt="Checkmark" style={{ marginLeft: '150px', marginRight:'15px' }} />
+                  <img width="53" height="53" src={checkmark} alt="Checkmark" style={{ marginLeft: '150px', marginRight:'15px' }} />
                   <div>
                     <h3 style={{ fontSize: '30px', fontWeight: 500, textDecoration: 'underline', marginBottom: '8px' }}>{project.title}</h3>
                     <p style={{ fontSize: '20px', fontWeight: 500, color: '#4a5568'}}>{project.description}</p>
