@@ -64,7 +64,6 @@ const MaizeGaze = () => {
                 <span>✔️ </span><span className="bg-blue-100 px-1">Reannotation 기능 개발 (Backend + Frontend)</span>
                 </h4>
                 <ul className="list-disc pl-8">
-                    {/* 그리드 */}
                     <div className="flex flex-col md:flex-row gap-6 items-start">
                         <div className="md:w-1/2">
                             <li className="list-none mb-3">

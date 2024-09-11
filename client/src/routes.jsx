@@ -4,6 +4,7 @@ import LandingPage from "./Pages/LandingPage";
 import MaizeGaze from "./Pages/MaizeGaze";
 import NavigationBar from "./Components/NavigationBar";
 import ScrollTop from "./Components/ScrollTop";
+import MyResume from "./Pages/MyResume";
 
 export default function AppRouter() {
   return (
@@ -23,6 +24,11 @@ export default function AppRouter() {
               path="/project/maizegaze"
               element={<MaizeGaze />}
             />
+            <Route
+                exact
+                path="/project/myresume"
+                element={<MyResume />}
+              />
           </Routes>
         </div>
       </div>

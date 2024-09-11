@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MdSpaceDashboard } from 'react-icons/md';
 import { GiCorn } from 'react-icons/gi';
+import { GiNotebook, GiSpellBook, GiOpenBook } from 'react-icons/gi';
 import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { icon: MdSpaceDashboard, link: "/", name: "Home" },
   { icon: GiCorn, link: "/project/maizegaze", name: "Project: MaizeGaze" },
+  { icon: GiSpellBook, link: "/project/myresume", name: "Project: MyResume"}
 ];
 
 const NavigationBar = () => {

@@ -168,7 +168,7 @@ const LandingPage = () => {
             <h2 style={{ fontSize: '40px', fontWeight: 700, textAlign: 'center', marginBottom: '20px' }}>Overview</h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {[
-                { title: "MyPortfolio", description: "Static website for introducing my portfolio", link:'/' },
+                { title: "MyResume", description: "Static website for introducing my portfolio", link:'/project/myresume' },
                 { title: "MaizeGaze", description: "Count & Detect Maize Tassels", link: "/project/maizegaze" },
                 // { title: "LinkMingle", description: "App for simply sharing Biz Card" },
               ].map((project, index) => (

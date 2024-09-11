@@ -72,3 +72,8 @@ button:focus-visible {
 	color: rgba(51, 126, 169, 1);
 	fill: rgba(51, 126, 169, 1);
 }
+
+.highlight-pink {
+  color: rgba(255, 105, 180, 1);
+  fill: rgba(255, 105, 180, 1);
+}
