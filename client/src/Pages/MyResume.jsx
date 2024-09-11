@@ -12,11 +12,12 @@ const MyResume = () => {
 
         <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">📌 프로젝트 간략 설명</h2>
-            <p className="pl-8">약 <strong>일주일</strong> 간의 짧은 기간 내에 제작되었습니다.</p>
+            <p className="pl-8">약 <strong>일주일</strong> 간의 짧은 기간 내에 제작된 개인 프로젝트입니다.</p>
             <div className="ml-7 mr-7 bg-gray-200 p-7 rounded-lg mt-4">
                 <p>
-                👉 취업 준비 과정에서 포트폴리오 내용을 정리하고 공유하기 위해 제작한 정적 웹사이트입니다. React 코드에 더 익숙해지기 위해 진행했습니다.
-                정적 웹사이트 배포에 특화된 <strong>Netlify를</strong>를 통해 CI/CD를 수행하였으며, 이를 통해 지속적인 업데이트와 자동 배포의 편리함을 경험했습니다. 또한, 프로젝트를 진행하며 React의 컴포넌트 구조와 상태 관리에 대한 이해를 더욱 심화시켰습니다.
+                👉 취업 준비 과정에서 포트폴리오 내용을 정리하고 공유하기 위해 제작한 정적 웹사이트입니다.
+                정적 웹사이트 배포에 특화된 <strong>Netlify</strong>를 통해 CI/CD를 수행하였으며, 이를 통해 지속적인 업데이트와 자동 배포의 편리함을 경험했습니다.
+                또한, 프로젝트를 진행하며 React의 컴포넌트 구조와 상태 관리에 대한 이해를 더욱 심화시켰습니다.
                 이 웹사이트는 향후 추가 프로젝트와 이력 사항을 지속적으로 업데이트할 수 있도록 설계되었습니다.
                 </p>
             </div>
@@ -49,6 +50,44 @@ const MyResume = () => {
                 </ul>
             </section>
         </div>
+
+        <hr className="my-8" />
+
+        <section className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4">🏆 개선점</h2>
+            <div className="mb-4">
+                <h4 className="text-lg font-semibold mb-3">
+                <span>✔️ </span><span className="bg-blue-100 px-1">모바일 인터페이스 최적화</span>
+                </h4>
+                <ul className="list-disc pl-8">
+                    <div className="flex flex-col md:flex-row gap-6 items-start">
+                        <div className="md:w-1/2">
+                            <li className="list-none mb-3">기존 모바일에서 사이트에 접근하면 화면이 구렸음. 이미지 요소들이 겹치거나 내용이 잘림</li>
+                            <li className="list-none mb-3">~를 통해 개선함. </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div className="mb-4">
+                <h4 className="text-lg font-semibold mb-3">
+                <span>✔️ </span><span className="bg-blue-100 px-1">위로 스크롤</span>
+                </h4>
+                <ul className="list-disc pl-8">
+                    <div className="flex flex-col md:flex-row gap-6 items-start">
+                        <div className="md:w-1/2">
+                            <li className="list-none mb-3">현재 페이지의 스크롤 위치에 따라 다른 페이지로 링크될 때 스크롤 위치가 달라짐.</li>
+                            <li className="list-none mb-3">다른 페이지로 링크될때 스크롤이 자동으로 맨위로 이동되도록함.</li>
+                            <li className="list-none mb-3">이를 통해 유저 경험 개선</li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+            <div className="mb-4">
+
+                
+            </div>
+            
+        </section>
 
         <hr className="my-8" />
 

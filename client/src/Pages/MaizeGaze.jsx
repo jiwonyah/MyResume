@@ -54,7 +54,7 @@ const MaizeGaze = () => {
         <hr className="my-8" />
 
         <section className="mb-8">
-    `        <h2 className="text-2xl font-semibold mb-4">🏆 나의 기여</h2>
+            <h2 className="text-2xl font-semibold mb-4">🏆 나의 기여</h2>
             <div className="flex items-center mb-3">
                 <h2 className="text-lg font-semibold mr-2">1. </h2>
                 <h2 className="text-lg font-semibold underline">코드 기여</h2>
