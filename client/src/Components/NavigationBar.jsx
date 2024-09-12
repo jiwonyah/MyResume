@@ -7,8 +7,8 @@ import { Menu, X } from 'lucide-react';
 
 const navItems = [
   { icon: MdSpaceDashboard, link: "/", name: "Home" },
+  { icon: GiSpellBook, link: "/project/myresume", name: "Project: MyResume"},
   { icon: GiCorn, link: "/project/maizegaze", name: "Project: MaizeGaze" },
-  { icon: GiSpellBook, link: "/project/myresume", name: "Project: MyResume"}
 ];
 
 const NavigationBar = () => {
@@ -26,13 +26,11 @@ const NavigationBar = () => {
             <Menu />
         </button>
 
-
         {/* Logo or Title */}
         <Link to="/" className="text-xl font-bold">
           Jiwon's Portfolio
         </Link>
 
-        {/* User Icon */}
         <div className="text-2xl">
           <Link to="/profile">
             <i className="fas fa-user-circle"></i>

@@ -28,63 +28,53 @@ import pin from "/src/assets/pin39_371.png";
 import note from "/src/assets/note37_277.png";
 import checkmark from "/src/assets/Done_round_fill39_361.png";
 
-
-
 const LandingPage = () => {
   return (
-<div className="max-w-5xl mx-auto mt-20">
-    <div style={{ margin: '0 auto', backgroundColor: 'white' }}>
+    <div className="max-w-5xl mx-auto mt-20 px-4 sm:px-6 lg:px-8">
       {/* Header Section */}
-      <header style={{ position: 'relative', width: '100%', height: '440px', backgroundColor: '#fffdfd' }}>
-        <div style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', textAlign: 'center' }}>
-          <h1 style={{ fontSize: '64px', fontWeight: 800, color: 'black', marginBottom: '16px' }}>JIWON MOON</h1>
-          <div style={{ width: '384px', height: '8px', backgroundColor: '#ffa100', margin: '0 auto 16px' }}></div>
-          <h2 style={{ fontSize: '43px', fontWeight: 700, color: 'black', marginBottom: '8px' }}>Junior Developer</h2>
-          <p style={{ fontSize: '36px', color: 'black' }}>Full-Stack</p>
+      <header className="relative w-full h-[440px] bg-[#fffdfd]">
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-black mb-4">JIWON MOON</h1>
+          <div className="w-48 sm:w-64 lg:w-96 h-2 bg-[#ffa100] mx-auto mb-4"></div>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-2">Junior Developer</h2>
+          <p className="text-xl sm:text-2xl lg:text-3xl text-black">Full-Stack</p>
         </div>
-        <img style={{ position: 'absolute', right: '96px', bottom: '0' }} width="146" height="136" src={sprout} alt="Sprout" />
+        <img className="absolute right-4 sm:right-24 bottom-0 w-24 sm:w-36 lg:w-[146px]" src={sprout} alt="Sprout" />
       </header>
 
       {/* About Me Section */}
-      <section style={{ backgroundColor: '#887257', padding: '64px 64px' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '32px' }}>
-          
-          {/* About Me Section - Increased Width */}
-          <div style={{ position: 'relative', backgroundColor: 'white', borderRadius: '24px', padding: '20px', width: '600px' }}>
-            <img style={{ position: 'absolute', top: '-64px', left: '80px' }} width="103" height="122" src={clip} alt="Profile" />
-            <h2 style={{ fontSize: '36px', fontWeight: 900, marginBottom: '20px', textAlign: 'center', marginTop: '20px' }}>ABOUT ME</h2>
-            <div style={{ marginTop: '20px', marginLeft: '28px', marginRight: '28px', marginBottom: '20px' }}>
+      <section className="bg-[#887257] p-8 sm:p-10">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-8">
+          <div className="relative bg-white rounded-3xl p-5 w-full lg:w-[600px]">
+            <img className="absolute top-[-64px] left-1/2 transform -translate-x-1/2 lg:left-20 lg:transform-none w-24 sm:w-[103px]" src={clip} alt="Profile" />
+            <h2 className="text-4xl font-black mb-4 text-center mt-16 sm:mt-8">ABOUT ME</h2>
+            <div className="mt-5 mx-4 sm:mx-7">
               {[
                 { icon: person, text: "Jiwon Moon" },
                 { icon: email, text: "jiwoncode0502@gmail.com" },
                 { icon: phone, text: "+65) 8280 - 2720" },
                 { icon: graduate, text: "University of Wollongong (Bachelor of Computer Science)" },
               ].map((item, index) => (
-                <div key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '16px' }}>
-                  <img width="45" src={item.icon} alt={`Icon ${index + 1}`} style={{ marginRight: '16px' }} />
-                  <p style={{ fontSize: '20px' }}>{item.text}</p>
+                <div key={index} className="flex items-center mb-4">
+                  <img className="w-8 sm:w-12 mr-4" src={item.icon} alt={`Icon ${index + 1}`} />
+                  <p className="text-base sm:text-lg">{item.text}</p>
                 </div>
               ))}
             </div>
           </div>
           
-          {/* Introduction Section - Decreased Width */}
-          <div style={{ width: '400px' }}>
-            <br></br><br></br><br></br><br></br>
-            {/* <h2 style={{ fontSize: '36px', fontWeight: 700, color: 'white' }}>Introduction</h2> */}
-            <p style={{ fontSize: '22px', fontWeight: 350, color: 'white' }}>I am <strong>Jiwon Moon</strong>, a developer focused on implementing user-friendly features and interfaces.</p>
-            <p style={{ fontSize: '22px', fontWeight: 350, color: 'white' }}>I prioritize closely analyzing the characteristics of target users and catering to their needs.</p>
+          <div className="w-full lg:w-[400px] mt-8 lg:mt-32">
+            <p className="text-xl sm:text-xl font-normal text-white">I am <strong>Jiwon Moon</strong>, a developer focused on implementing user-friendly features and interfaces.</p>
+            <p className="text-xl sm:text-xl font-normal text-white mt-4">I prioritize closely analyzing the characteristics of target users and catering to their needs.</p>
           </div>
-
         </div>
       </section>
 
-
       {/* Archiving Section */}
-      <section style={{ backgroundColor: 'black', padding: '50px 32px' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <h1 style={{ fontSize: '48px', fontWeight: 800, color: 'white', marginBottom: '40px', textAlign: 'center' }}>ARCHIVING</h1>
-          <div style={{ display: 'flex', justifyContent: 'space-between', gap: '32px' }}>
+      <section className="bg-black p-8 sm:p-12 lg:p-16">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-8 sm:mb-12 text-center">ARCHIVING</h1>
+          <div className="flex flex-col lg:flex-row justify-between gap-8">
             {[
               {
                 title: "What are in here?",
@@ -109,13 +99,13 @@ const LandingPage = () => {
                 image: velog,
               },
             ].map((item, index) => (
-              <div key={index} style={{ backgroundColor: 'white', borderRadius: '24px', padding: '32px', width: '600px' }}>
-                <img style={{ marginBottom: '16px' }} width="250" height="59" src={item.image} alt={`Platform ${index + 1}`} />
-                <a href={item.actualLink} style={{ fontSize: '20px', color: '#0066b0', textDecoration: 'underline', display: 'block', marginBottom: '24px', marginLeft: '20px', marginRight: '20px' }}>{item.displayLink}</a>
-                <h3 style={{ fontSize: '30px', fontWeight: 900, marginBottom: '16px', marginLeft: '20px', marginRight: '20px' }}>{item.title}</h3>
-                <ul style={{ listStyleType: 'disc', paddingLeft: '20px' }}>
+              <div key={index} className="bg-white rounded-3xl p-6 sm:p-8 w-full lg:w-[600px]">
+                <img className="mb-4 w-48 sm:w-64" src={item.image} alt={`Platform ${index + 1}`} />
+                <a href={item.actualLink} className="text-lg sm:text-xl text-[#0066b0] underline block mb-6 mx-4 sm:mx-5">{item.displayLink}</a>
+                <h3 className="text-2xl sm:text-3xl font-black mb-4 mx-4 sm:mx-5">{item.title}</h3>
+                <ul className="list-disc pl-8">
                   {item.description.map((desc, i) => (
-                    <li key={i} style={{ fontSize: '20px', marginBottom: '8px', marginLeft: '24px', marginRight: '24px' }}>{desc}</li>
+                    <li key={i} className="text-lg sm:text-lg mb-2 mx-2 sm:mx-3">{desc}</li>
                   ))}
                 </ul>
               </div>
@@ -125,10 +115,10 @@ const LandingPage = () => {
       </section>
 
       {/* Skills Section */}
-      <section style={{ backgroundColor: '#ffc800', padding: '50px 32px' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <h1 style={{ fontSize: '48px', fontWeight: 800, color: 'black', marginBottom: '40px', textAlign: 'center' }}>SKILLS</h1>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '32px' }}>
+      <section className="bg-[#ffc800] p-8 sm:p-12 lg:p-16">
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black mb-8 sm:mb-12 text-center">SKILLS</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
             {[
               { title: "Front-end", images: [html, react, vite, tailewind] },
               { title: "Back-end", images: [python, flask, mysql, sqlite] },
@@ -137,12 +127,12 @@ const LandingPage = () => {
               { title: "Deployment", images: [netlify] },
               { title: "Container", images: [docker] },
             ].map((skill, index) => (
-              <div key={index} style={{ backgroundColor: 'white', borderRadius: '24px', padding: '32px' }}>
-                <h3 style={{ fontSize: '30px', fontWeight: 800, color: '#e86800', textAlign: 'center', marginBottom: '16px' }}>{skill.title}</h3>
-                <div style={{ borderTop: '4px solid #bf4300', margin: '16px 0' }}></div>
-                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center', gap: '16px' }}>
+              <div key={index} className="bg-white rounded-3xl p-6 sm:p-8">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#e86800] text-center mb-4">{skill.title}</h3>
+                <div className="border-t-4 border-[#bf4300] my-4"></div>
+                <div className="flex flex-wrap justify-center items-center gap-4">
                   {skill.images.map((img, imgIndex) => (
-                    <img key={imgIndex} src={img} alt={`${skill.title} skill ${imgIndex + 1}`} style={{ maxWidth: '130px', maxHeight: '130px', objectFit: 'contain' }} />
+                    <img key={imgIndex} src={img} alt={`${skill.title} skill ${imgIndex + 1}`} className="max-w-[80px] sm:max-w-[100px] lg:max-w-[130px] max-h-[80px] sm:max-h-[100px] lg:max-h-[130px] object-contain" />
                   ))}
                 </div>
               </div>
@@ -152,49 +142,35 @@ const LandingPage = () => {
       </section>
 
       {/* Projects Section */}
-      <section style={{ backgroundColor: 'white', padding: '64px 32px' }}>
-        <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-          <div style={{ position: 'relative', marginBottom: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <section className="bg-white p-8 sm:p-12 lg:p-16">
+        <div className="max-w-6xl mx-auto">
+        <div className="flex items-center justify-center mb-12">
+          <div className="relative flex items-center">
             <img
-              style={{ position: 'absolute', left: '250px', marginTop:'83px', transform: 'translateY(-50%)' }}
-              width="80"
+              className="absolute right-full mr-2 w-12 sm:w-16 lg:w-20"
               src={pin}
               alt="Pin"
             />
-            <h1 style={{ fontSize: '48px', fontWeight: 800, color: 'black', textAlign: 'center' }}>PROJECTS</h1>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black">
+              PROJECTS
+            </h1>
           </div>
-          <div style={{ backgroundImage: `url(${note})`, backgroundSize: 'cover',
-             backgroundPosition: 'center', borderRadius: '24px', padding: '40px'}}>
-            <h2 style={{ fontSize: '40px', fontWeight: 700, textAlign: 'center', marginBottom: '20px' }}>Overview</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+        </div>
+          <div className="bg-cover bg-center rounded-3xl p-6 sm:p-8" style={{backgroundImage: `url(${note})`}}>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 sm:mb-10">Overview</h2>
+            <div className="flex flex-col gap-6 sm:gap-10">
               {[
                 { title: "MyResume", description: "Static website for introducing my portfolio", link:'/project/myresume' },
                 { title: "MaizeGaze", description: "Count & Detect Maize Tassels", link: "/project/maizegaze" },
-                // { title: "LinkMingle", description: "App for simply sharing Biz Card" },
               ].map((project, index) => (
-                <div key={index} style={{ display: 'flex', alignItems: 'flex-start' }}>
-                  <img width="53" height="53" src={checkmark} alt="Checkmark" style={{ marginLeft: '150px', marginRight:'15px' }} />
+                <div key={index} className="flex items-start">
+                  <img className="w-10 sm:w-12 lg:w-[53px] mr-4 sm:mr-6 ml-0 sm:ml-16 lg:ml-[150px]" src={checkmark} alt="Checkmark" />
                   <div>
-                    <h3 style={{ fontSize: '30px', fontWeight: 500, textDecoration: 'underline', marginBottom: '8px' }}>{project.title}</h3>
-                    <p style={{ fontSize: '20px', fontWeight: 500, color: '#4a5568'}}>{project.description}</p>
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-medium underline mb-2 sm:mb-4">{project.title}</h3>
+                    <p className="text-lg sm:text-xl font-medium text-[#4a5568] mb-2">{project.description}</p>
                     <Link 
                       to={project.link} 
-                      style={{ 
-                        fontSize: '20px', 
-                        fontWeight: 500, 
-                        color: '#4a5568', 
-                        textDecoration: 'none',
-                        transition: 'color 0.3s ease, transform 0.3s ease',
-                        display: 'inline-block'
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.color = '#2b6cb0';
-                        e.currentTarget.style.transform = 'translateX(5px)';
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.color = '#4a5568';
-                        e.currentTarget.style.transform = 'translateX(0)';
-                      }}
+                      className="text-lg sm:text-xl font-medium text-[#4a5568] no-underline inline-block transition-all duration-300 ease-in-out hover:text-[#2b6cb0] hover:translate-x-1"
                     >
                       ➡️ View Details
                     </Link>
@@ -203,27 +179,21 @@ const LandingPage = () => {
               ))}
             </div>
           </div>
-          <br></br>
-          <div style={{textAlign: 'center'}}>
-            <p>프로젝트는 최신순으로 나열됩니다.</p>
+          <div className="text-center mt-6">
+            <p className="text-base sm:text-lg">프로젝트는 최신순으로 나열됩니다.</p>
           </div>
-          
         </div>
       </section>
 
-
       {/* Footer with Scroll to Top */}
-      <footer style={{ backgroundColor: 'white', borderTop: '2px solid #e2e8f0', padding: '64px 0', textAlign: 'center' }}>
+      <footer className="bg-white border-t-2 border-[#e2e8f0] py-12 sm:py-16 text-center">
         <button 
-          style={{ 
-            padding: '10px 20px'
-          }} 
+          className="p-3 sm:p-4 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors duration-300"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <TbArrowBigUpLines />
+          <TbArrowBigUpLines className="w-6 h-6 sm:w-8 sm:h-8" />
         </button>
       </footer>
-    </div>
     </div>
   );
 };
