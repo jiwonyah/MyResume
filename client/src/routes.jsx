@@ -5,6 +5,7 @@ import MaizeGaze from "./Pages/MaizeGaze";
 import NavigationBar from "./Components/NavigationBar";
 import ScrollTop from "./Components/ScrollTop";
 import MyResume from "./Pages/MyResume";
+import SpamEmailDetection from "./Pages/SpamEmailDetection";
 
 export default function AppRouter() {
   return (
@@ -28,6 +29,12 @@ export default function AppRouter() {
                 exact
                 path="/project/myresume"
                 element={<MyResume />}
+              />
+
+            <Route
+                exact
+                path="/project/spamdetection"
+                element={<SpamEmailDetection />}
               />
           </Routes>
         </div>

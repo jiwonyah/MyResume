@@ -162,6 +162,7 @@ const LandingPage = () => {
               {[
                 { title: "MyResume", description: "Static website for introducing my portfolio", link:'/project/myresume' },
                 { title: "MaizeGaze", description: "Count & Detect Maize Tassels", link: "/project/maizegaze" },
+                { title: "Spam Email Detectoin", description: "Implement models detecting Spam emails", link: "/project/spamdetection" },
               ].map((project, index) => (
                 <div key={index} className="flex items-start">
                   <img className="w-10 sm:w-12 lg:w-[53px] mr-4 sm:mr-6 ml-0 sm:ml-16 lg:ml-[150px]" src={checkmark} alt="Checkmark" />
